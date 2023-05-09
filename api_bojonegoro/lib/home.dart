@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:api_bojonegoro/home/view_home.dart';
 import 'package:api_bojonegoro/kecamatan/view_kecamatan.dart';
+import 'package:api_bojonegoro/info/view_info.dart';
 
 class HomeApps extends StatefulWidget {
   @override
@@ -14,7 +15,8 @@ class _HomeAppsState extends State<HomeApps> {
       title: 'Welcome to Bojonegoro With API',
       routes: {
         '/': (BuildContext _) => HomeView(),
-        '/kecamatan': (BuildContext _) => KecamatanView()
+        '/kecamatan': (BuildContext _) => KecamatanView(),
+        '/info': (BuildContext _) => InfoView()
       },
       initialRoute: '/',
     );

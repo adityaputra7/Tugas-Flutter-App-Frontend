@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:api_bojonegoro/kecamatan/detail/controller_detailkecamatan.dart';
+import 'package:api_bojonegoro/info/controller_info.dart';
 
-class DetailKecamatanView extends StatefulWidget {
+class InfoView extends StatefulWidget {
   @override
-  _DetailKecamatanViewState createState() => _DetailKecamatanViewState();
+  _InfoViewState createState() => _InfoViewState();
 }
 
-class _DetailKecamatanViewState extends DetailKecamatanController {
+class _InfoViewState extends InfoController {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
       centerTitle: true,
       title: Text(
-        'Ini Adalah Detail Kecamatan',
+        'Tentang Aplikasi',
         style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,

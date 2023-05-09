@@ -11,6 +11,7 @@ class _HomeViewState extends HomeController {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: Text(
             'Kabupaten Bojonegoro With API',
             style: TextStyle(
@@ -24,9 +25,20 @@ class _HomeViewState extends HomeController {
           child: ListView(padding: EdgeInsets.all(0.0), children: <Widget>[
             UserAccountsDrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.green,
+                gradient: LinearGradient(
+                  begin: Alignment.topRight,
+                  end: Alignment.bottomLeft,
+                  colors: [
+                    Color.fromRGBO(51, 205, 77, 1),
+                    Color.fromARGB(255, 17, 159, 53)
+                  ],
+                ),
+                image: DecorationImage(
+                  image: AssetImage('../images/pngwing.png'),
+                  fit: BoxFit.fill,
+                ),
               ),
-              accountEmail: Text('adityaputrairfandi@proton.me'),
+              accountEmail: Text('adityaputrairfandi@bojonegoro.go.id'),
               accountName: Text('Aditya Putra Irfandi'),
             ),
             ListTile(
@@ -53,6 +65,7 @@ class _HomeViewState extends HomeController {
             ),
             Divider(),
             ListTile(
+              onTap: () => Navigator.of(context).pushNamed('/info'),
               title: Text('Info'),
               leading: CircleAvatar(
                 backgroundColor: Colors.green,
