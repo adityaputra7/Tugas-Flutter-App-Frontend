@@ -48,7 +48,7 @@ class _KecamatanState extends State<KecamatanView> {
                   : const Center(),
             ),
             title: Text(
-              '${_get[index]['id']}. ${_get[index]['nama_kecamatan']}',
+              '${_get[index]['nama_kecamatan']}',
               style: TextStyle(
                   fontSize: 25,
                   color: Colors.black,
@@ -66,6 +66,9 @@ class _KecamatanState extends State<KecamatanView> {
                     jumlah_kelurahan: _get[index]['jumlah_kelurahan'],
                     description: _get[index]['description'],
                     path: _get[index]['path'],
+                    luas_wilayah: _get[index]['luas_wilayah'],
+                    jumlah_penduduk: _get[index]['jumlah_penduduk'],
+                    alamat: _get[index]['alamat'],
                   ),
                 ),
               );

@@ -9,13 +9,6 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  final List<String> imageList = [
-    "https://raw.githubusercontent.com/adityaputra7/gambar/main/assets/Banyu-Kuning-Bojonegoro.jpg",
-    "https://raw.githubusercontent.com/adityaputra7/gambar/main/assets/Banyu-Kuning-Bojonegoro2.jpg",
-    "https://raw.githubusercontent.com/adityaputra7/gambar/main/assets/Banyu-Kuning-Bojonegoro3.jpg",
-    "https://raw.githubusercontent.com/adityaputra7/gambar/main/assets/Banyu-Kuning-Bojonegoro4.jpg",
-    "https://raw.githubusercontent.com/adityaputra7/gambar/main/assets/Banyu-Kuning-Bojonegoro5.jpg",
-  ];
   final images = [
     "pngwing.png",
   ];
@@ -48,7 +41,8 @@ class _HomeViewState extends State<HomeView> {
                   ],
                 ),
                 image: DecorationImage(
-                  image: AssetImage('../assets/pngwing.png'),
+                  image: NetworkImage(
+                      'https://cdn.discordapp.com/attachments/1055785082960494702/1106986048657035314/pngwing.png'),
                   fit: BoxFit.fill,
                 ),
               ),
